@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hesaplaa ile her şeyin hesabını hızlı ve ücretsiz yapın.">
+    <title>Hesaplaa | Hesabını Kolayca Yap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- ÜST MENÜ-->
+     <header class="ust-menu">
+        <a href="#" class="logo">Hesaplaa</a>
+        <nav>
+            <a href="#araclar">Hesaplama Araçları</a>
+            <a href="#hakkinda">Hakkımızda</a>
+        </nav>
+     </header>
+
+     <!-- ANA TANITIM ALANI-->
+     <main>
+        <section class="hero">
+            <p class="etiket">GÜNLÜK HESAPLAMAR ARTIK ÇOK KOLAY</p>
+            <h1>İhtiyacın olan tüm hesaplamalar <span>tek bir yerde.</span></h1>
+            <p class="aciklama">Karmaşık hesaplar ile uğraşma. Hesaplaa ile sonucunu saniyeler içinde öğren!</p>
+            <a href="#araclar" class="ana-buton">Hemen Hesapla → </a>
+        </section>
+
+        <!-- Hesaplama araçları -->
+         <section id="araclar" class="araclar">
+            <p class="etiket">HESAPLAMA ARAÇLARI</p>
+            <h2>Ne Hesaplamak İstersin?</h2>
+            <div class="arac-listesi">
+                <button class="arac-kart" data-tool="vat">
+                    <h3>KDV Hesaplaa</h3>
+                    <p>KDV Dahil ve Hariç Fiyat Hesapla</p>
+                </button>
+
+                <button class="arac-kart" data-tool="discount">
+                    <h3>İndirim Hesaplaa</h3>
+                    <p>İndirimli Fiyatı Öğren</p>
+                </button>
+
+                <button class="arac-kart" data-tool="percent">
+                    <h3>Yüzde Hesaplaa</h3>
+                    <p>Yüzdesini Bul</p>
+                </button>
+
+                <button class="arac-kart" data-tool="age">
+                    <h3>Yaş Hesaplaa</h3>
+                    <p>Yaşını Öğren</p>
+                </button>
+            </div>
+         </section>
+
+         <!-- Hesaplama bölümü -->
+          <section class="hesaplama">
+            <h2 id="calc-title">KDV Hesaplama</h2>
+            <p id="calc-desc">Tutarı ve KDV oranını girin.</p>
+            <div id="calc-fields"></div>
+            <button id="calculate" class="hesapla-buton">HESAPLA</button>
+            <div id="result" class="sonuc">Sonucun Burada Gözükecek</div>
+          </section>
+
+          <!-- Hakkımızda -->
+           <section id="hakkinda" class="hakkinda">
+            <h2>Hesaplamak Artık Çok Kolay!</h2>
+
+            <p>
+                Hesaplaa, günlük hayatta ihtiyaç duyduğun
+                hesaplamaları hızlı ve ücretsiz yapmanı sağlar.
+            </p>
+        </section>
+     </main>
+
+     <footer>
+        © 2026 Hesaplaa. Tüm hakları saklıdır.
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
