@@ -1,36 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hesaplaa ile her şeyin hesabını hızlı ve ücretsiz yapın.">
-    <title>Hesapplar | Hesabını Kolayca Yap</title>
+
+    <!-- SEO -->
+    <title>Ücretsiz KDV, İndirim, Yüzde ve Yaş Hesaplama | Hesapplar</title>
+    <meta name="description" content="Hesapplar ile KDV, indirim, yüzde ve yaş hesaplamalarını hızlı, kolay ve ücretsiz yap. Günlük hesaplama işlemlerinin sonucunu saniyeler içinde öğren!">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Hesapplar">
+    <link rel="canonical" href="https://hesapplar.com/">
+
+    <!-- Sosyal Medya Paylaşımı -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Hesapplar | Ücretsiz Online Hesaplama Araçları">
+    <meta property="og:description" content="KDV, indirim, yüzde ve yaş hesaplamalarını Hesapplar ile ücretsiz ve kolayca yap.">
+    <meta property="og:url" content="https://hesapplar.com/">
+    <meta property="og:site_name" content="Hesapplar">
+    <meta property="og:locale" content="tr_TR">
+
+    <!-- Tarayıcı -->
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Yapılandırılmış Veri -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Hesapplar",
+      "url": "https://hesapplar.com/",
+      "description": "Ücretsiz online KDV, indirim, yüzde ve yaş hesaplama araçları."
+    }
+    </script>
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
-    <!-- ÜST MENÜ-->
-     <header class="ust-menu">
+    <!-- ÜST MENÜ -->
+    <header class="ust-menu">
         <a href="#" class="logo">Hesapplar</a>
         <nav>
             <a href="#araclar">Hesaplama Araçları</a>
             <a href="#hakkinda">Hakkımızda</a>
         </nav>
-     </header>
+    </header>
 
-     <!-- ANA TANITIM ALANI-->
-     <main>
+    <!-- ANA TANITIM ALANI -->
+    <main>
         <section class="hero">
             <p class="etiket">GÜNLÜK HESAPLAMALAR ARTIK ÇOK KOLAY</p>
             <h1>İhtiyacın olan tüm hesaplamalar <span>tek bir yerde.</span></h1>
             <p class="aciklama">Karmaşık hesaplar ile uğraşma. Hesapplar ile sonucunu saniyeler içinde öğren!</p>
-            <a href="#araclar" class="ana-buton">Hemen Hesapla → </a>
+            <a href="#araclar" class="ana-buton">Hemen Hesapla →</a>
         </section>
 
-        <!-- Hesaplama araçları -->
-         <section id="araclar" class="araclar">
+        <!-- HESAPLAMA ARAÇLARI -->
+        <section id="araclar" class="araclar">
             <p class="etiket">HESAPLAMA ARAÇLARI</p>
             <h2>Ne Hesaplamak İstersin?</h2>
+
             <div class="arac-listesi">
                 <button class="arac-kart" data-tool="vat">
                     <h3>KDV Hesapla</h3>
@@ -52,31 +81,31 @@
                     <p>Yaşını Öğren</p>
                 </button>
             </div>
-         </section>
+        </section>
 
-         <!-- Hesaplama bölümü -->
-          <section class="hesaplama">
+        <!-- HESAPLAMA BÖLÜMÜ -->
+        <section class="hesaplama">
             <h2 id="calc-title">KDV Hesaplama</h2>
             <p id="calc-desc">Tutarı ve KDV oranını girin.</p>
             <div id="calc-fields"></div>
             <button id="calculate" class="hesapla-buton">HESAPLA</button>
             <div id="result" class="sonuc">Sonucun Burada Gözükecek</div>
-          </section>
+        </section>
 
-          <!-- Hakkımızda -->
-           <section id="hakkinda" class="hakkinda">
+        <!-- HAKKIMIZDA -->
+        <section id="hakkinda" class="hakkinda">
             <h2>Hesaplamak Artık Çok Kolay!</h2>
-
             <p>
                 Hesapplar, günlük hayatta ihtiyaç duyduğun
                 hesaplamaları hızlı ve ücretsiz yapmanı sağlar.
             </p>
         </section>
-     </main>
+    </main>
 
-     <footer>
+    <footer>
         © 2026 Hesapplar Tüm hakları saklıdır.
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
