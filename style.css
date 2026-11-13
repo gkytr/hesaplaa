@@ -243,3 +243,105 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+/* Kartların gelişmiş görünümü */
+.arac-kart {
+    min-height: 145px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: 0 3px 12px rgba(24, 35, 31, 0.03);
+}
+
+.arac-kart:hover {
+    box-shadow: 0 8px 22px rgba(31, 139, 98, 0.10);
+}
+
+.arac-kart:focus-visible,
+.ana-buton:focus-visible,
+.hesapla-buton:focus-visible {
+    outline: 3px solid #1f8b62;
+    outline-offset: 4px;
+}
+
+/* Hesaplama alanı */
+.hesaplama {
+    box-shadow: 0 8px 30px rgba(24, 35, 31, 0.05);
+}
+
+.field input:focus,
+.field select:focus {
+    outline: none;
+    border-color: #1f8b62;
+    box-shadow: 0 0 0 3px rgba(31, 139, 98, 0.10);
+}
+
+.field input,
+.field select {
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* Hesapla butonu */
+.hesapla-buton {
+    transition: background 0.2s, transform 0.2s;
+    font-weight: bold;
+}
+
+.hesapla-buton:hover {
+    background: #176d4d;
+}
+
+.hesapla-buton:active {
+    transform: scale(0.98);
+}
+
+/* Sonuç alanı */
+.sonuc {
+    line-height: 1.8;
+    border: 1px solid #d8ecdf;
+}
+
+/* Mobil görünüm */
+@media (max-width: 768px) {
+    .hero {
+        padding: 70px 6%;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .araclar {
+        padding: 55px 6%;
+    }
+
+    .arac-listesi {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .arac-kart {
+        padding: 18px;
+        min-height: 135px;
+    }
+
+    .hesaplama {
+        margin: 50px 15px;
+        padding: 24px 20px;
+    }
+}
+
+/* Küçük telefonlar */
+@media (max-width: 380px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .arac-listesi {
+        grid-template-columns: 1fr;
+    }
+
+    .arac-kart {
+        min-height: 110px;
+    }
+}
