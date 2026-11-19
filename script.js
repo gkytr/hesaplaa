@@ -106,6 +106,7 @@ const birimler = {
 };
 
 let seciliArac = "vat";
+let currencyRequestId = 0;
 
 const alanlar = document.getElementById("calc-fields");
 const sonuc = document.getElementById("result");
