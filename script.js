@@ -106,6 +106,8 @@ const birimler = {
 };
 
 let seciliArac = "vat";
+let currencyRequestId = 0;
+let currencyRequestId = 0;
 
 const alanlar = document.getElementById("calc-fields");
 const sonuc = document.getElementById("result");
@@ -124,6 +126,7 @@ function sayiFormatla(sayi) {
 }
 
 function aracGoster(arac) {
+    currencyRequestId += 1;
     seciliArac = arac;
 
     const bilgi = hesaplamalar[arac];
@@ -308,6 +311,7 @@ async function hesapla() {
             return;
         }
 
+        const requestId = ++currencyRequestId;
         sonucuGoster("Kur bilgisi alınıyor...");
 
         try {
@@ -320,12 +324,14 @@ async function hesapla() {
             }
 
             const veri = await cevap.json();
+            if (requestId !== currencyRequestId || seciliArac !== "currency") return;
             const donusum = miktar * veri.rate;
 
             sonucuGoster(
                 `${sayiFormatla(miktar)} ${kaynak} = ${sayiFormatla(donusum)} ${hedef} | Referans kuru: 1 ${kaynak} = ${sayiFormatla(veri.rate)} ${hedef} | Kur tarihi: ${veri.date}`
             );
         } catch (hata) {
+            if (requestId !== currencyRequestId || seciliArac !== "currency") return;
             sonucuGoster("Döviz kuru alınamadı. İnternet bağlantını kontrol edip tekrar dene.");
         }
 
